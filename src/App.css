@@ -1,38 +1,102 @@
+.all{
+background-color: black;
+width: 100%;
+height: 658px;
+
+}
+
 .App {
+  
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width :50%;
+  height: 600px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image:linear-gradient(
+      to right, 
+      rgba(0, 128, 0, 0.603),
+      #1dd6f6, 
+      #e9da12);
+  background-color: royalblue;
+  border-radius: 5px;
+  margin-left: 350px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.text-black{
+  width:60%;
+  height: 40px;
+  background-color: gainsboro;
+  margin-top: 20px;
+ 
+  border-radius: 5px;
+  font-size: large;
+  text-transform: capitalize;
+  
 }
+.text-black:focus{
+  border-top: #1dd6f6;
+}
+.l{
+font-size: large;
+font-weight: 700;
+color: rgb(26, 22, 22);
+margin-right: 5px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+}
+.btn
+{
+  transition-delay: 2s;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  border-color: dodgerblue;
+  height: 40px;
+  margin-left: 5px;
+  cursor: pointer;
+
+}
+.btn:hover{
+  background-image:linear-gradient(
+      to right, 
+      #E7484F,
+      #F68B1D, 
+      #FCED00,
+      #009E4F,
+      #00AAC3,
+      #732982
+    );
+animation:slidebg 2s linear infinite;
+  color:indigo;
+  font-weight: 500;
+  
+
+}
+.result{
+ background-image: linear-gradient(
+to right,
+green ,
+rgba(255, 255, 255, 0.473),
+rgb(0, 153, 255)
+
+ );
+  width: 680px;
+  height: 160px;
+  border-radius: 10px;
+
+}
+.rs{
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  margin-top: 5px;
+
+}
+@keyframes slidebg {
   to {
-    transform: rotate(360deg);
+    background-position:20vw;
+  }
+}
+@keyframes move {
+  to{
+    background-position: 20vw;
   }
 }
